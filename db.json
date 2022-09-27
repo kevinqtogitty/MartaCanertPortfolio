@@ -1,0 +1,31 @@
+{
+  "picturesDesktop": {
+    "row1": [
+      "/photos/interior3.jpg",
+      "/photos/exterior2.jpg",
+      "/photos/bathroom3.jpg",
+      "/photos/closeup1.jpg",
+      "/photos/closeup2.jpg"
+    ],
+    "row2": [
+      "/photos/interior1.jpg",
+      "/photos/interior4.jpg",
+      "/photos/bathroom1.jpg",
+      "/photos/exterior1.jpg",
+      "/photos/interior2.jpg"
+    ]
+  },
+
+  "picturesMobile": [
+    "/photos/interior3.jpg",
+    "/photos/exterior2.jpg",
+    "/photos/bathroom3.jpg",
+    "/photos/closeup1.jpg",
+    "/photos/closeup2.jpg",
+    "/photos/interior1.jpg",
+    "/photos/interior4.jpg",
+    "/photos/bathroom1.jpg",
+    "/photos/exterior1.jpg",
+    "/photos/interior2.jpg"
+  ]
+}
