@@ -46,6 +46,7 @@ const MobileFlexDisplay = styled.section`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    row-gap: 0rem;
   }
 `;
 
