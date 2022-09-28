@@ -18,6 +18,9 @@ const PhotoContainer = styled.div`
   max-width: 11rem;
   max-height: 15.4rem;
   overflow: hidden;
+  &.mobile {
+    height: 15.2rem;
+  }
 `;
 
 interface PhotoProps {
