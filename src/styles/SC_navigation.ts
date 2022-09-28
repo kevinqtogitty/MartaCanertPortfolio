@@ -11,10 +11,15 @@ const NavigationBar = styled.nav`
   padding: 0.8rem;
   position: fixed;
   width: 100vw;
-  background-color: #fff;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+
   @media (min-width: 820px) {
-    justify-content: flex-start;
-    font-size: 3rem;
+    padding-right: calc(100vw - 85%);
+    justify-content: flex-end;
+    font-size: 2rem;
+    column-gap: 2rem;
     background-color: rgba(0, 0, 0, 0);
   }
 `;
