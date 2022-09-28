@@ -59,6 +59,8 @@ const HeadersWrapper = styled.div`
   width: fit-content;
   border-radius: 5px;
   @media (min-width: 820px) {
+    box-shadow: none;
+    padding: 0px;
     align-items: flex-start;
   }
 `;
