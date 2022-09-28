@@ -16,7 +16,7 @@ const PortfolioMainWrapper = styled.article`
 
 const PhotoContainer = styled.div`
   max-width: 11rem;
-  max-height: 15.8rem;
+  max-height: 15.4rem;
   overflow: hidden;
 `;
 
@@ -32,6 +32,7 @@ const Photo = styled.img<PhotoProps>`
 
 const FlexRow1 = styled.div`
   display: flex;
+  height: fit-content;
   @media (max-width: 820px) {
     display: none;
   }
