@@ -1,3 +1,4 @@
+import { animated } from '@react-spring/web';
 import styled from 'styled-components';
 
 const LandingPageContent = styled.div`
@@ -5,7 +6,7 @@ const LandingPageContent = styled.div`
   height: 100vh;
 `;
 
-const Content = styled.article`
+const Content = styled(animated.article)`
   display: flex;
   justify-content: center;
   text-align: center;
