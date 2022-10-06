@@ -18,7 +18,8 @@
         "project_name": "Dark Bathroom",
         "photos": [
           "/photos/bathroom/bathroom2.jpg",
-          "/photos/bathroom/bathroom3.jpg"
+          "/photos/bathroom/bathroom3.jpg",
+          "/photos/bathroom/bathroom4.jpg"
         ],
         "view_height": "50vh"
       },
@@ -57,10 +58,7 @@
       },
       {
         "project_name": "Bathroom Counter",
-        "photos": [
-          "/photos/bathroom/bathroom1.jpg",
-          "/photos/bathroom/bathroom4.jpg"
-        ],
+        "photos": ["/photos/bathroom/bathroom1.jpg"],
         "view_height": "70vh"
       },
       {
@@ -115,9 +113,10 @@
       "project_name": "Dark Bathroom",
       "photos": [
         "/photos/bathroom/bathroom2.jpg",
-        "/photos/bathroom/bathroom3.jpg"
+        "/photos/bathroom/bathroom3.jpg",
+        "/photos/bathroom/bathroom4.jpg"
       ],
-      "view_height": "30vh"
+      "view_height": "25vh"
     },
     {
       "project_name": "kitchen",
@@ -152,10 +151,7 @@
     },
     {
       "project_name": "Bathroom Counter",
-      "photos": [
-        "/photos/bathroom/bathroom1.jpg",
-        "/photos/bathroom/bathroom4.jpg"
-      ],
+      "photos": ["/photos/bathroom/bathroom1.jpg"],
       "view_height": "40vh"
     },
     {
