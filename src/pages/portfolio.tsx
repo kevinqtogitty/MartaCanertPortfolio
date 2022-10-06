@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import {
   ModalMask,
   ModalPhotoWrapper,
-  ModalProjectDescriptionWrapper
+  ModalProjectDescriptionWrapper,
+  ProjectDescription
 } from '../styles/SC_modal';
 import {
   PortfolioMainWrapper,
@@ -26,7 +27,7 @@ const Portfolio: React.FC = (): JSX.Element => {
 
   const dataRow1 = data.picturesDesktop.row1;
   const dataRow2 = data.picturesDesktop.row2;
-  const datatMobile = data.picturesMobile;
+  const dataMobile = data.picturesMobile;
 
   const handleModalIsActive = (
     photos: string[],
@@ -50,10 +51,10 @@ const Portfolio: React.FC = (): JSX.Element => {
       {modalIsActive ? (
         <ModalMask onClick={() => setModalIsActive((state) => !state)}>
           <ModalProjectDescriptionWrapper>
-            <div>
+            <ProjectDescription>
               <h2>{modalProjectName}</h2>
-              Marta Canert Design
-            </div>
+              <>Marta Canert Design</>
+            </ProjectDescription>
             <ModalPhotoWrapper>
               {modalImgSrc.map((url, key) => (
                 <Photo
@@ -100,16 +101,22 @@ const Portfolio: React.FC = (): JSX.Element => {
           ))}
         </FlexRow2>
       </FlexboxWrapper>
-      {/* <MobileFlexDisplay>
-        {datatMobile.map((url, key) => (
+      <MobileFlexDisplay>
+        {dataMobile.map((project, key) => (
           <PhotoContainer key={key} className="mobile">
             <Photo
-              src={`${url}`}
-              onClick={() => handleModalIsActive(url, 'auto')}
+              src={`${project.photos[0]}`}
+              onClick={() =>
+                handleModalIsActive(
+                  project.photos,
+                  project.view_height,
+                  project.project_name
+                )
+              }
             />
           </PhotoContainer>
         ))}
-      </MobileFlexDisplay> */}
+      </MobileFlexDisplay>
     </PortfolioMainWrapper>
   );
 };
