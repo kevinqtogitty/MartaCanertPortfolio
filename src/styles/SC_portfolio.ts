@@ -38,6 +38,7 @@ const Photo = styled.img<PhotoProps>`
 const FlexboxWrapper = styled.div`
   width: fit-content;
   height: fit-content;
+  position: absolute;
 `;
 
 const FlexRow1 = styled.div`
@@ -53,6 +54,9 @@ const MobileFlexDisplay = styled.section`
   display: none;
   @media (max-width: 820px) {
     width: fit-content;
+    margin-top: 1rem;
+    /* position: absolute;
+    top: 6rem; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

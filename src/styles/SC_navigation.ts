@@ -12,11 +12,13 @@ const NavigationBar = styled.nav`
   padding: 0.8rem;
   position: fixed;
   width: 100vw;
-
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
+  @media (min-width: 500px) {
+    font-size: 2.5rem;
+  }
 
-  @media (min-width: 820px) {
+  @media (min-width: 821px) {
     padding-right: calc(100vw - 85%);
     justify-content: space-between;
     font-size: 2.5rem;
@@ -45,4 +47,23 @@ const NavigationLink = styled(NavLink)`
   }
 `;
 
-export { NavigationBar, NavigationLink };
+const ResizedLogo = styled.img`
+  height: 3rem;
+  margin-left: 10rem;
+  margin-top: 0.5rem;
+  @media (max-width: 820px) {
+    display: none;
+  }
+`;
+
+const LinksWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  @media (max-width: 820px) {
+    justify-content: center;
+  }
+`;
+
+export { NavigationBar, NavigationLink, ResizedLogo, LinksWrapper };
