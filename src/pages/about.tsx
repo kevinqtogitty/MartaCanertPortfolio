@@ -1,3 +1,4 @@
+import { useSpring, config } from '@react-spring/web';
 import React from 'react';
 import {
   MainAboutMeWrapper,
@@ -12,9 +13,15 @@ import {
   MobileWrapper
 } from '../styles/SC_about';
 
-const About = () => {
+const About: React.FC = (): JSX.Element => {
+  const aboutPageAnimation = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: config.slow
+  });
+
   return (
-    <MainAboutMeWrapper>
+    <MainAboutMeWrapper style={aboutPageAnimation}>
       <H2 className="mobile">Let's meet eachother!</H2>
       <MobileWrapper>
         <Photo src="/photos/Marta.jpg" />
