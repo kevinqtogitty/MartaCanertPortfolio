@@ -1,6 +1,7 @@
+import { animated } from '@react-spring/web';
 import styled from 'styled-components';
 
-const ContactMainWrawrapper = styled.article`
+const ContactMainWrawrapper = styled(animated.article)`
   width: 100vw;
   height: fit-content;
   display: flex;
@@ -34,8 +35,30 @@ const SocialIconsWrapper = styled.div`
   }
 `;
 
-const SocialIcon = styled.img`
-  width: 2.5rem;
+const SocialIcon = styled(animated.span)`
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  &.instagram {
+    background-image: url(/icons/instagram.svg);
+  }
+
+  &.facebook {
+    background-image: url(/icons/facebook.svg);
+  }
+
+  &.linkedIn {
+    background-image: url(/icons/linkedin.svg);
+  }
+
+  &.behance {
+    background-image: url(/icons/behance.svg);
+  }
+
+  :hover {
+    filter: invert(50%) sepia(36%) saturate(2237%) hue-rotate(349deg)
+      brightness(101%) contrast(101%);
+  }
 `;
 
 const H1 = styled.h1`
