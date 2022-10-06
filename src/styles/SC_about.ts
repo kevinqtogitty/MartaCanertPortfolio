@@ -1,6 +1,7 @@
+import { animated } from '@react-spring/web';
 import styled from 'styled-components';
 
-const MainAboutMeWrapper = styled.article`
+const MainAboutMeWrapper = styled(animated.article)`
   width: 100vw;
   height: 100%;
   padding: 2rem 1rem 1rem 1rem;
