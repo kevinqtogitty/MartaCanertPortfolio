@@ -1,18 +1,99 @@
 {
   "picturesDesktop": {
     "row1": [
-      "/photos/interior3.jpg",
-      "/photos/exterior2.jpg",
-      "/photos/bathroom3.jpg",
-      "/photos/closeup1.jpg",
-      "/photos/closeup2.jpg"
+      {
+        "project_name": "Bedroom",
+        "photos": [
+          "/photos/bedroom/bedroom1.jpg",
+          "/photos/bedroom/bedroom2.jpg"
+        ],
+        "view_height": "70vh"
+      },
+      {
+        "project_name": "backyard",
+        "photos": ["/photos/backyard.jpg"],
+        "view_height": "80vh"
+      },
+      {
+        "project_name": "Dark Bathroom",
+        "photos": [
+          "/photos/bathroom/bathroom2.jpg",
+          "/photos/bathroom/bathroom3.jpg"
+        ],
+        "view_height": "50vh"
+      },
+      {
+        "project_name": "kitchen",
+        "photos": [
+          "/photos/kitchen/kitchen1.jpg",
+          "/photos/kitchen/kitchen2.jpg",
+          "/photos/kitchen/kitchen3.jpg"
+        ],
+        "view_height": "60vh"
+      },
+      {
+        "project_name": "livingroom",
+        "photos": [
+          "/photos/living_room/livingroom3.jpg",
+          "/photos/living_room/livingroom1.jpg",
+          "/photos/living_room/livingroom2.jpg"
+        ],
+        "view_height": "50vh"
+      },
+      {
+        "project_name": "Dining Table Closeup",
+        "photos": ["/photos/closeup1.jpg"],
+        "view_height": "80vh"
+      }
     ],
     "row2": [
-      "/photos/interior1.jpg",
-      "/photos/interior4.jpg",
-      "/photos/bathroom1.jpg",
-      "/photos/exterior1.jpg",
-      "/photos/interior2.jpg"
+      {
+        "project_name": "Dining Room",
+        "photos": [
+          "/photos/dining_room/dining_room1.jpg",
+          "/photos/dining_room/dining_room2.jpg"
+        ],
+        "view_height": "70vh"
+      },
+      {
+        "project_name": "Bathroom Counter",
+        "photos": [
+          "/photos/bathroom/bathroom1.jpg",
+          "/photos/bathroom/bathroom4.jpg"
+        ],
+        "view_height": "70vh"
+      },
+      {
+        "project_name": "Exterior",
+        "photos": [
+          "/photos/exterior_car/exterior_car2.jpg",
+          "/photos/exterior_car/exterior_car3.jpg",
+          "/photos/exterior_car/exterior_car4.jpg"
+        ],
+        "view_height": "40vh"
+      },
+      {
+        "project_name": "Play Room",
+        "photos": [
+          "/photos/playroom/playroom1.jpg",
+          "/photos/playroom/playroom2.jpg",
+          "/photos/playroom/playroom3.jpg"
+        ],
+        "view_height": "40vh"
+      },
+      {
+        "project_name": "Modern Office",
+        "photos": ["/photos/office/office1.jpg", "/photos/office/office2.jpg"],
+        "view_height": "70vh"
+      },
+      {
+        "project_name": "Bathroom",
+        "photos": [
+          "/photos/bathroom/bathroom5.jpg",
+          "/photos/bathroom/bathroom6.jpg"
+        ],
+        "view_height": "70vh"
+      }
     ]
   },
 
