@@ -10,6 +10,7 @@ const GreyFooter = styled.footer`
   position: fixed;
   bottom: 0;
   padding: 0.5rem;
+  z-index: 0;
 `;
 
 const Name = styled.h3`
