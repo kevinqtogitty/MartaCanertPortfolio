@@ -1,3 +1,4 @@
+import { animated } from '@react-spring/web';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -18,8 +19,7 @@ const NavigationBar = styled.nav`
   @media (min-width: 820px) {
     padding-right: calc(100vw - 85%);
     justify-content: flex-end;
-    font-size: 2rem;
-    column-gap: 2rem;
+    font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0);
   }
 `;
@@ -27,6 +27,7 @@ const NavigationBar = styled.nav`
 const NavigationLink = styled(NavLink)`
   text-decoration: none;
   color: #000;
+  transition: color 0.2s ease-in-out;
   &:focus,
   &:hover,
   &:visited,
@@ -36,6 +37,10 @@ const NavigationLink = styled(NavLink)`
   }
 
   &.active {
+    color: rgb(255, 117, 24);
+  }
+
+  &:hover {
     color: rgb(255, 117, 24);
   }
 `;
