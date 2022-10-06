@@ -11,6 +11,10 @@ const ModalMask = styled.div`
   justify-content: center;
   backdrop-filter: blur(2px);
   z-index: 1;
+  @media (max-width: 500px) {
+    align-items: flex-start;
+  }
+  /* overflow: scroll; */
 `;
 
 const ModalPhotoWrapper = styled.div`
@@ -27,6 +31,28 @@ const ModalProjectDescriptionWrapper = styled.div`
   flex-direction: column;
   row-gap: 1rem;
   padding: 0.5rem;
+  @media (max-width: 820px) {
+    align-items: center;
+  }
 `;
 
-export { ModalMask, ModalPhotoWrapper, ModalProjectDescriptionWrapper };
+const ProjectDescription = styled.div`
+  padding: 1rem;
+  background-color: rgba(3, 2, 1, 0.8);
+  color: #fff;
+  width: fit-content;
+  border-radius: 6px;
+  @media (max-width: 500px) {
+    text-align: center;
+    width: 100vw;
+    padding: 1rem;
+    border-radius: 0px;
+  }
+`;
+
+export {
+  ModalMask,
+  ModalPhotoWrapper,
+  ModalProjectDescriptionWrapper,
+  ProjectDescription
+};
