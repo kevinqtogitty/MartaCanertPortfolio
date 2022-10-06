@@ -1,6 +1,7 @@
+import { animated } from '@react-spring/web';
 import styled from 'styled-components';
 
-const PortfolioMainWrapper = styled.article`
+const PortfolioMainWrapper = styled(animated.article)`
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -27,15 +28,21 @@ interface PhotoProps {
   height?: string;
   width?: string;
 }
+
 const Photo = styled.img<PhotoProps>`
   height: ${(props) => props.height || '30vh'};
   overflow: hidden;
   cursor: pointer;
 `;
 
+const FlexboxWrapper = styled.div`
+  width: fit-content;
+  height: fit-content;
+`;
+
 const FlexRow1 = styled.div`
   display: flex;
-  height: fit-content;
+  height: 15rem;
   @media (max-width: 820px) {
     display: none;
   }
@@ -60,5 +67,6 @@ export {
   PhotoContainer,
   FlexRow1,
   FlexRow2,
-  MobileFlexDisplay
+  MobileFlexDisplay,
+  FlexboxWrapper
 };
