@@ -8,7 +8,7 @@ const NavigationBar = styled.nav`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0.8rem;
   position: fixed;
   width: 100vw;
@@ -18,7 +18,7 @@ const NavigationBar = styled.nav`
 
   @media (min-width: 820px) {
     padding-right: calc(100vw - 85%);
-    justify-content: flex-end;
+    justify-content: space-between;
     font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0);
   }
