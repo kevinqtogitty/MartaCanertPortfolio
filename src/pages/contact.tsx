@@ -9,9 +9,14 @@ import {
   SocialIconsWrapper
 } from '../styles/SC_contact';
 
+const socials = {
+  linkedIn: import.meta.env.VITE_PUBLIC_LINKEDIN,
+  instagram: import.meta.env.VITE_PUBLIC_INSTAGRAM,
+  behance: import.meta.env.VITE_PUBLIC_BHEANCE
+};
+
 const Contact: React.FC = (): JSX.Element => {
   const [instagramIsHovered, setInstagramIsHovered] = useState<boolean>(false);
-  const [facebookIsHovered, setFacebookIsHovered] = useState<boolean>(false);
   const [linkedInIsHovered, setLinkedInIsHovered] = useState<boolean>(false);
   const [behanceIsHovered, setBehanceIsHovered] = useState<boolean>(false);
 
@@ -19,13 +24,6 @@ const Contact: React.FC = (): JSX.Element => {
     from: { transform: 'translateY(0px)' },
     to: {
       transform: instagramIsHovered ? 'translateY(-10px)' : 'translateY(0px)'
-    }
-  });
-
-  const animateFB = useSpring({
-    from: { transform: 'translateY(0px)' },
-    to: {
-      transform: facebookIsHovered ? 'translateY(-10px)' : 'translateY(0px)'
     }
   });
 
@@ -54,7 +52,7 @@ const Contact: React.FC = (): JSX.Element => {
       <ContactInfo>
         <H1>Let's keep in touch!</H1>
         <SocialIconsWrapper>
-          <a href="https://www.instagram.com">
+          <a href={socials.instagram}>
             <SocialIcon
               style={animateIG}
               onMouseEnter={() => setInstagramIsHovered((state) => !state)}
@@ -62,15 +60,7 @@ const Contact: React.FC = (): JSX.Element => {
               className="instagram"
             />
           </a>
-          <a href="https://www.facebook.com">
-            <SocialIcon
-              style={animateFB}
-              onMouseEnter={() => setFacebookIsHovered((state) => !state)}
-              onMouseLeave={() => setFacebookIsHovered((state) => !state)}
-              className="facebook"
-            />
-          </a>
-          <a href="https://www.linkedin.com">
+          <a href={socials.linkedIn}>
             <SocialIcon
               style={animateLI}
               onMouseEnter={() => setLinkedInIsHovered((state) => !state)}
@@ -78,7 +68,7 @@ const Contact: React.FC = (): JSX.Element => {
               className="linkedIn"
             />
           </a>
-          <a href="https://www.behance.net">
+          <a href={socials.behance}>
             <SocialIcon
               style={animateBH}
               onMouseEnter={() => setBehanceIsHovered((state) => !state)}
