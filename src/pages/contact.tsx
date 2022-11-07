@@ -12,7 +12,7 @@ import {
 const socials = {
   linkedIn: import.meta.env.VITE_PUBLIC_LINKEDIN,
   instagram: import.meta.env.VITE_PUBLIC_INSTAGRAM,
-  behance: import.meta.env.VITE_PUBLIC_BHEANCE
+  behance: import.meta.env.VITE_PUBLIC_BEHANCE
 };
 
 const Contact: React.FC = (): JSX.Element => {
